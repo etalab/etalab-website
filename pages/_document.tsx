@@ -1,6 +1,7 @@
 import DefaultDocument, { Html, Head, Main, NextScript } from 'next/document'
 import type { DocumentContext } from "next/document";
 import { getColorSchemeSsrUtils } from "@codegouvfr/react-dsfr/next";
+import { augmentDocumentWithEmotionCache } from "./_app";
 
 const {
 	readColorSchemeFromCookie,
@@ -28,3 +29,5 @@ Document.getInitialProps = async (ctx: DocumentContext) => {
 	return { ...initialProps };
 
 };
+
+augmentDocumentWithEmotionCache(Document);
