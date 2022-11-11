@@ -1,6 +1,23 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import DefaultApp from "next/app";
+import { withAppDsfr } from "@codegouvfr/react-dsfr/next";
+import "@codegouvfr/react-dsfr/dsfr/dsfr.css";
+import "@codegouvfr/react-dsfr/dsfr/utility/icons/icons.css";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+export default withAppDsfr(
+	DefaultApp,
+	{
+		"defaultColorScheme": "system",
+		"preloadFonts": [
+			//"Marianne-Light",
+			//"Marianne-Light_Italic",
+			"Marianne-Regular",
+			//"Marianne-Regular_Italic",
+			"Marianne-Medium",
+			//"Marianne-Medium_Italic",
+			"Marianne-Bold",
+			//"Marianne-Bold_Italic",
+			//"Spectral-Regular",
+			//"Spectral-ExtraBold"
+		]
+	}
+);

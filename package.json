@@ -5,17 +5,22 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "predev": "only_include_used_icons",
+    "prebuild": "only_include_used_icons"
   },
   "dependencies": {
     "next": "13.0.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "@codegouvfr/react-dsfr": "^0.0.28"
+
   },
   "devDependencies": {
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.8",
-    "typescript": "4.8.4"
+    "typescript": "4.8.4",
+    "next-transpile-modules": "^10.0.0"
   }
 }
