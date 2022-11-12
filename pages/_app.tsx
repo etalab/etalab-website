@@ -5,14 +5,14 @@ import "@codegouvfr/react-dsfr/dsfr/dsfr.css";
 import "@codegouvfr/react-dsfr/dsfr/utility/icons/icons.css";
 
 const {
-    augmentDocumentWithEmotionCache,
-    withAppEmotionCache
+	augmentDocumentWithEmotionCache,
+	withAppEmotionCache
 } = createEmotionSsrAdvancedApproach({ "key": "css" });
 
 export { augmentDocumentWithEmotionCache };
 
-export default withAppEmotionCache(withAppDsfr(
-	DefaultApp,
+export default withAppDsfr(
+	withAppEmotionCache(DefaultApp),
 	{
 		"defaultColorScheme": "system",
 		"preloadFonts": [
@@ -28,5 +28,5 @@ export default withAppEmotionCache(withAppDsfr(
 			//"Spectral-ExtraBold"
 		]
 	}
-));
+);
 
