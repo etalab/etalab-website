@@ -63,12 +63,12 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@codegouvfr/react-dsfr@^0.0.34":
-  version "0.0.34"
-  resolved "https://registry.yarnpkg.com/@codegouvfr/react-dsfr/-/react-dsfr-0.0.34.tgz#4a5577c2bf35f5a1733011faf68d3229a8b93353"
-  integrity sha512-mp2kcOJKyUgwawRs6ijhmrf9KLhyk+T79fooTl6HNCls4RC6mAfzKe01YjwFfAXW1I2xtoUEc24/2qcLfN+y2A==
+"@codegouvfr/react-dsfr@^0.0.35":
+  version "0.0.35"
+  resolved "https://registry.yarnpkg.com/@codegouvfr/react-dsfr/-/react-dsfr-0.0.35.tgz#a3648e5eac285f0178f6cd8b63243ae9c2a71646"
+  integrity sha512-ED6ujO9ZA6GVDnJiync2mOL7kAQ+rT6/fcyFOkonO4ODShvkk4tiC1q7UK53wIJfSCYej0eg+K8oqwXeHe1gGw==
   dependencies:
-    "@gouvfr/dsfr" "1.8.1"
+    "@gouvfr/dsfr" "1.8.2"
     remixicon "^2.5.0"
     tsafe "^1.1.1"
 
@@ -171,10 +171,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.3.0.tgz#ea89004119dc42db2e1dba0f97d553f7372f6fcb"
   integrity sha512-AHPmaAx+RYfZz0eYu6Gviiagpmiyw98ySSlQvCUhVGDRtDFe4DBS0x1bSjdF3gqUDYOczB+yYvBTtEylYSdRhg==
 
-"@gouvfr/dsfr@1.8.1":
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/@gouvfr/dsfr/-/dsfr-1.8.1.tgz#2484eb8ad9a73b5f01c5f41f49146d1aa8a71b7b"
-  integrity sha512-XpVFdvhtalA5jSAhzzNaMd+/Hvf8Ef9jCdAZhuukEEMo2/cWvCgzz9tfbE+9QTJDIVP+EwJ7aCGWcXUSWkOHJg==
+"@gouvfr/dsfr@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/@gouvfr/dsfr/-/dsfr-1.8.2.tgz#11ba1aa3e5a19f5dadcbdc5ab3bb7ffe077a0b23"
+  integrity sha512-F9+M9BAAeFKZ6y/JXSf8CDqsZM61aWMWEJRkdZZCeWuh86SH1tsNZat8XDuB1GS8I/BnvSesnbt7Jvsn71gO0g==
 
 "@next/env@13.0.3":
   version "13.0.3"
