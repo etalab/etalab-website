@@ -1,6 +1,6 @@
 <p align="center">
-    <a href="https://github.com/etalab/www.etalab.gouv.fr/actions">
-      <img src="https://github.com/etalab/www.etalab.gouv.fr/workflows/ci/badge.svg?branch=main">
+    <a href="https://github.com/etalab/etalab-website/actions">
+      <img src="https://github.com/etalab/etalab-website/workflows/ci/badge.svg?branch=main">
     </a>
 </p>
 
@@ -15,6 +15,6 @@ This is a new implementation of the Etalab's website.
 ## Docker 
 
 ```bash
-docker build -t www.etalab.gouv.fr .
-docker run -p 3000:3000 www.etalab.gouv.fr
+docker build -t etalab-website .
+docker run -p 3000:3000 etalab-website
 ```
