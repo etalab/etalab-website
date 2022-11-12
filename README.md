@@ -1,3 +1,9 @@
+<p align="center">
+    <a href="https://github.com/etalab/www.etalab.gouv.fr/actions">
+      <img src="https://github.com/etalab/www.etalab.gouv.fr/workflows/ci/badge.svg?branch=main">
+    </a>
+</p>
+
 🏗 **This is a work in progress.**  
 
 # Code source of www.etalab.gouv.fr  
