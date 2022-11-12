@@ -23,13 +23,13 @@ export const {
 	getTranslation,
 	withLang
 } = createI18nApi<
-	| typeof import("pages/index").i18n
+	| typeof import("pages/test").i18n
 >()(
     { languages, fallbackLanguage },
     {
 	/* spell-checker: disable */
 	"fr": {
-			"Home": {
+			"Test": {
 				"currently in what mode": ({ isDark }) => `Actuellement en mode ${isDark ? "sombre" : "clair"}`,
 				"set to dark mode": "Passer en mode 🌑",
 				"set to light mode": "Passer en mode 🌕"
@@ -37,7 +37,7 @@ export const {
         },
 	/* spell-checker: enable */
         "en": {
-			"Home": {
+			"Test": {
 				"currently in what mode": ({ isDark }) => `Currently in ${isDark ? "dark" : "light"} mode`,
 				"set to dark mode": "Set to 🌑 mode",
 				"set to light mode": "Set to 🌕 mode"
