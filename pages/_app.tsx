@@ -1,9 +1,10 @@
-import DefaultApp from "next/app";
+import type { AppProps } from "next/app";
 import { withAppDsfr } from "@codegouvfr/react-dsfr/next";
 import { createEmotionSsrAdvancedApproach } from "tss-react/next";
 import { withLang } from "../i18n";
 import "@codegouvfr/react-dsfr/dsfr/dsfr.css";
 import "@codegouvfr/react-dsfr/dsfr/utility/icons/icons.css";
+import { Header } from "components/Header";
 
 const {
 	augmentDocumentWithEmotionCache,
@@ -12,8 +13,17 @@ const {
 
 export { augmentDocumentWithEmotionCache };
 
+function App({ Component, pageProps }: AppProps) {
+	return (
+		<>
+			<Header />
+			<Component {...pageProps} />
+		</>
+	);
+}
+
 export default withAppDsfr(
-	withLang(withAppEmotionCache(DefaultApp)),
+	withLang(withAppEmotionCache(App)),
 	{
 		"defaultColorScheme": "system",
 		"preloadFonts": [
