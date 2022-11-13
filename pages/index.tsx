@@ -50,7 +50,7 @@ export default function Home() {
                                         </a>
                                     </li>
                                     <li>
-                                        <a className={fr.cx("fr-btn", "fr-icon-account-line" as any)} href="[url - à modifier]">
+                                        <a className={fr.cx("fr-btn", "fr-icon-account-line")} href="[url - à modifier]">
                                             S’enregistrer
                                         </a>
                                     </li>
