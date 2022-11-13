@@ -10,7 +10,7 @@
     "prebuild": "only_include_used_icons"
   },
   "dependencies": {
-    "@codegouvfr/react-dsfr": "^0.0.36",
+    "@codegouvfr/react-dsfr": "^0.0.37",
     "@emotion/react": "^11.10.5",
     "@emotion/server": "^11.10.0",
     "i18nifty": "^1.3.28",

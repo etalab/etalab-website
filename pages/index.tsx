@@ -22,7 +22,7 @@ export default function Home() {
                                     </p>
                                 </div>
                                 <div className={fr.cx("fr-header__navbar")}>
-                                    <button className={fr.cx("fr-btn--menu" as any, "fr-btn")} data-fr-opened="false" aria-controls={modalId} aria-haspopup="menu" id={menuButtonId} title="Menu">
+                                    <button className={fr.cx("fr-btn--menu", "fr-btn")} data-fr-opened="false" aria-controls={modalId} aria-haspopup="menu" id={menuButtonId} title="Menu">
                                         Menu
                                     </button>
                                 </div>
@@ -60,7 +60,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className={fr.cx(/*"fr-header__menu" as any,*/ "fr-modal")} id={modalId} aria-labelledby={menuButtonId}>
+            <div className={fr.cx("fr-header__menu", "fr-modal")} id={modalId} aria-labelledby={menuButtonId}>
                 <div className={fr.cx("fr-container")}>
                     <button className={fr.cx("fr-btn--close", "fr-btn")} aria-controls={modalId} title="Fermer">
                         Fermer
