@@ -18,6 +18,8 @@ export default function Document(props: DocumentProps) {
 	);
 }
 
+//NOTE: The order in which those augmentations are made doesn't affect the behavior.
+
 augmentDocumentByReadingColorSchemeFromCookie(Document);
 
 augmentDocumentWithEmotionCache(Document);

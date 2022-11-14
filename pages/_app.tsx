@@ -41,5 +41,6 @@ function App({ Component, pageProps }: AppProps) {
 	);
 }
 
+// The composition order doesn't affect the behavior.
 export default withDsfr(withLang(withAppEmotionCache(App)));
 
