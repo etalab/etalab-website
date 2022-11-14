@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import { withAppDsfr } from "@codegouvfr/react-dsfr/next";
+import { createNextDsfrIntegrationApi } from "@codegouvfr/react-dsfr/next";
 import { createEmotionSsrAdvancedApproach } from "tss-react/next";
 import { withLang } from "../i18n";
 import "@codegouvfr/react-dsfr/dsfr/dsfr.css";
@@ -13,19 +13,9 @@ const {
 
 export { augmentDocumentWithEmotionCache };
 
-function App({ Component, pageProps }: AppProps) {
-	return (
-		<>
-			<Header />
-			<Component {...pageProps} />
-		</>
-	);
-}
-
-export default withAppDsfr(
-	withLang(withAppEmotionCache(App)),
-	{
+const { withDsfr, dsfrDocumentApi} = createNextDsfrIntegrationApi({
 		"defaultColorScheme": "system",
+		"doPersistDarkModePreferenceWithCookie": true,
 		"preloadFonts": [
 			//"Marianne-Light",
 			//"Marianne-Light_Italic",
@@ -37,7 +27,19 @@ export default withAppDsfr(
 			//"Marianne-Bold_Italic",
 			//"Spectral-Regular",
 			//"Spectral-ExtraBold"
-		]
-	}
-);
+		],
+});
+
+export { dsfrDocumentApi };
+
+function App({ Component, pageProps }: AppProps) {
+	return (
+		<>
+			<Header />
+			<Component {...pageProps} />
+		</>
+	);
+}
+
+export default withDsfr(withLang(withAppEmotionCache(App)));
 

@@ -1,5 +1,5 @@
 import { declareComponentKeys } from "i18nifty";
-import { createI18nApi } from "i18nifty/ssr";
+import { createI18nApi } from "i18nifty/next";
 export { declareComponentKeys };
 
 //List the languages you with to support
