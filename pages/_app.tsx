@@ -2,8 +2,6 @@ import type { AppProps } from "next/app";
 import { createNextDsfrIntegrationApi } from "@codegouvfr/react-dsfr/next";
 import { createEmotionSsrAdvancedApproach } from "tss-react/next";
 import { withLang } from "../i18n";
-import "@codegouvfr/react-dsfr/dsfr/dsfr.css";
-import "@codegouvfr/react-dsfr/dsfr/utility/icons/icons.css";
 import { Header } from "components/Header";
 
 const {

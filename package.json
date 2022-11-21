@@ -6,11 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "predev": "only_include_used_icons",
-    "prebuild": "only_include_used_icons"
+    "predev": "only-include-used-icons",
+    "prebuild": "only-include-used-icons"
   },
   "dependencies": {
-    "@codegouvfr/react-dsfr": "^0.0.41",
+    "@codegouvfr/react-dsfr": "^0.0.46",
     "@emotion/react": "^11.10.5",
     "@emotion/server": "^11.10.0",
     "i18nifty": "^1.4.0",
