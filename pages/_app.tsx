@@ -1,7 +1,8 @@
 import type { AppProps } from "next/app";
 import { createNextDsfrIntegrationApi } from "@codegouvfr/react-dsfr/next";
+import { DsfrLangProvider } from "@codegouvfr/react-dsfr";
 import { createEmotionSsrAdvancedApproach } from "tss-react/next";
-import { withLang } from "../i18n";
+import { withLang, useLang } from "i18n";
 import { Header } from "components/Header";
 
 const {
@@ -31,11 +32,14 @@ const { withDsfr, dsfrDocumentApi} = createNextDsfrIntegrationApi({
 export { dsfrDocumentApi };
 
 function App({ Component, pageProps }: AppProps) {
+
+	const { lang } = useLang();
+
 	return (
-		<>
+		<DsfrLangProvider lang={lang}>
 			<Header />
 			<Component {...pageProps} />
-		</>
+		</DsfrLangProvider>
 	);
 }
 
