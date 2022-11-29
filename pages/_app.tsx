@@ -4,6 +4,14 @@ import { DsfrLangProvider } from "@codegouvfr/react-dsfr";
 import { createEmotionSsrAdvancedApproach } from "tss-react/next";
 import { withLang, useLang } from "i18n";
 import { Header } from "components/Header";
+import { addAlertTranslations } from "@codegouvfr/react-dsfr/Alert";
+
+addAlertTranslations({
+	"lang": "zh-CN",
+	"messages": {
+		"hide message": "隐藏消息"
+	}
+});
 
 const {
 	augmentDocumentWithEmotionCache,
@@ -45,4 +53,3 @@ function App({ Component, pageProps }: AppProps) {
 
 // The composition order doesn't affect the behavior.
 export default withDsfr(withLang(withAppEmotionCache(App)));
-
